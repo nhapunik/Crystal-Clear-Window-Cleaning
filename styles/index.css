@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 h1 {
@@ -25,10 +25,10 @@ h1 {
   border-bottom: solid 1px rgb(255, 249, 222);
 }
 
-.estimate-button {
+.estimate-button a {
+  display: block;
   padding: 0.8rem 1.2rem;
   margin: 2rem auto;
-
   text-align: center;
   font-size: 1.2rem;
   border-radius: 4px;
@@ -43,10 +43,69 @@ h1 {
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(199, 199, 199);
   border-right: 1px solid rgb(199, 199, 199);
-}
-
-.estimate-button a {
   text-decoration: none;
   color: rgb(255, 249, 222);
   font-family: "Atkinson Hyperlegible";
+}
+
+main {
+  border-radius: 6px;
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(199, 199, 199, 0.8)
+  );
+  max-width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+/* main section, .estimate-button a {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(199, 199, 199, 0.8)
+  );
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(125, 135, 134, 0.534);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  border-right: 1px solid rgb(199, 199, 199);
+  text-decoration: none; */
+}
+main section {
+  display: inline-block;
+  max-width: 45%;
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(255, 249, 222);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 500;
+  padding: 0.7rem 0;
+}
+
+p {
+  color: rgb(255, 249, 222);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  line-height: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+ul li {
+  margin-left: 1.5rem;
+  color: rgb(255, 249, 222);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+strong {
+  font-weight: 500;
+}
+
+.contact {
+  display: block;
 }
