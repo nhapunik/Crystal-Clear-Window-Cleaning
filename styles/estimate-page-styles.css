@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to top right,
+    rgb(103, 250, 252),
+    rgb(147, 176, 188)
+  );
+}
+
+header {
+  margin-top: 1rem;
+  text-align: center;
+}
+h1 {
+  color: rgb(255, 249, 222);
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+  border-bottom: solid 1px rgb(255, 249, 222);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
+}
+
+.home a {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  width: 200px;
+  text-decoration: none;
+  color: rgb(255, 249, 222);
+  overflow: hidden;
+}
+.home a::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 20px;
+  background: #f3f3f3;
+  box-shadow: 0 0 10px #fff;
+  filter: blur(1px);
+  opacity: 0.9;
+  top: 50px;
+  left: 39%;
+  transition: 0.7s;
+  transform: rotate(-20deg) translateX(-60px);
+}
+
+.home a:hover::before {
+  transform: rotate(-20deg) translate(280px, 110px);
+}
+
+main {
+  border-radius: 6px;
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(199, 199, 199, 0.8)
+  );
+  max-width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+
+main,
+.home a {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(199, 199, 199, 0.8)
+  );
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(125, 135, 134, 0.534);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  border-right: 1px solid rgb(199, 199, 199);
+  text-decoration: none;
+}
+
+.form-header {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(245, 245, 245, 0.708);
+  border-radius: 6px;
+  color: rgb(102, 100, 91);
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 0.3rem 0;
+}
+
+a:hover {
+  color: rgb(102, 100, 91);
+}
+
+h4,
+h4 a {
+  color: rgba(255, 255, 255, 0.381);
+  font-weight: 300;
+}
+h4 {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+h4.credit {
+  left: auto;
+  right: 3px;
+}
