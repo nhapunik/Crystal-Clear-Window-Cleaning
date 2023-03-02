@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top right,
+    rgb(103, 250, 252),
+    rgb(147, 176, 188)
+  );
+}
+
+header {
+  margin-top: 2rem;
+  text-align: center;
+}
+h1 {
+color: rgb(255, 249, 222);
+font-family: 'Atkinson Hyperlegible', sans-serif;
+font-weight: 500;
+padding-bottom: 1.2rem;
+border-bottom: solid 1px rgb(255, 249, 222);
+}
