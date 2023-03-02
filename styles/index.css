@@ -2,10 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 body {
   height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(
     to top right,
     rgb(103, 250, 252),
@@ -19,7 +21,6 @@ header {
 }
 h1 {
   color: rgb(255, 249, 222);
-  font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 500;
   padding-bottom: 1.2rem;
   border-bottom: solid 1px rgb(255, 249, 222);
@@ -32,20 +33,9 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   border-radius: 4px;
-  background-image: linear-gradient(
-    to bottom left,
-    rgba(255, 255, 255, 0.3),
-    rgba(199, 199, 199, 0.8)
-  );
-  max-width: 300px;
-  box-shadow: 0.3rem 0.3rem 0.3rem rgba(125, 135, 134, 0.534);
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-bottom: 1px solid rgb(199, 199, 199);
-  border-right: 1px solid rgb(199, 199, 199);
+  width: 300px;
   text-decoration: none;
   color: rgb(255, 249, 222);
-  font-family: "Atkinson Hyperlegible";
 }
 
 main {
@@ -61,7 +51,8 @@ main {
   justify-content: center;
   align-content: flex-start;
 }
-/* main section, .estimate-button a {
+main,
+.estimate-button a {
   background-image: linear-gradient(
     to bottom left,
     rgba(255, 255, 255, 0.3),
@@ -72,7 +63,7 @@ main {
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(199, 199, 199);
   border-right: 1px solid rgb(199, 199, 199);
-  text-decoration: none; */
+  text-decoration: none;
 }
 main section {
   display: inline-block;
@@ -83,22 +74,20 @@ main section {
 h2 {
   text-align: center;
   color: rgb(255, 249, 222);
-  font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 500;
   padding: 0.7rem 0;
 }
 
 p {
   color: rgb(255, 249, 222);
-  font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   margin-bottom: 1.2rem;
 }
 ul li {
   margin-left: 1.5rem;
   color: rgb(255, 249, 222);
-  font-family: "Atkinson Hyperlegible", sans-serif;
+
   font-weight: 500;
   line-height: 1.5rem;
 }
@@ -106,6 +95,34 @@ strong {
   font-weight: 500;
 }
 
-.contact {
-  display: block;
+h3 {
+  color: rgb(255, 249, 222);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
 }
+i,
+h3 {
+  display: inline-block;
+}
+i {
+  margin-left: 1.5rem;
+  color: rgb(255, 249, 222);
+}
+
+h4, h4 a {
+  color: rgba(255, 255, 255, 0.381);
+  font-weight: 300;
+}
+h4 {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+h4.credit {
+  left: auto;
+  right: 3px;
+}
+
