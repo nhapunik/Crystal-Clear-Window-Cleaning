@@ -48,8 +48,9 @@ main {
   max-width: 92%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: flex-start;
+  backdrop-filter: blur(10px);
 }
 main,
 .estimate-button a {
@@ -71,15 +72,29 @@ main section {
   margin: 1rem;
 }
 
+.bio {
+  padding: 0.7rem 1.5rem;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(245, 245, 245, 0.708);
+  border-radius: 6px;
+  padding-left: auto;
+  color: rgb(102, 100, 91);
+}
+
+.info {
+  margin: 1.5rem auto;
+}
 h2 {
   text-align: center;
-  color: rgb(255, 249, 222);
   font-weight: 500;
   padding: 0.7rem 0;
 }
 
 p {
-  color: rgb(255, 249, 222);
   font-weight: 400;
   line-height: 1.4rem;
   margin-bottom: 1.2rem;
@@ -112,7 +127,8 @@ i {
   color: rgb(255, 249, 222);
 }
 
-h4, h4 a {
+h4,
+h4 a {
   color: rgba(255, 255, 255, 0.381);
   font-weight: 300;
 }
@@ -125,4 +141,3 @@ h4.credit {
   left: auto;
   right: 3px;
 }
-
