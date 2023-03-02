@@ -18,9 +18,35 @@ header {
   text-align: center;
 }
 h1 {
-color: rgb(255, 249, 222);
-font-family: 'Atkinson Hyperlegible', sans-serif;
-font-weight: 500;
-padding-bottom: 1.2rem;
-border-bottom: solid 1px rgb(255, 249, 222);
+  color: rgb(255, 249, 222);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+  border-bottom: solid 1px rgb(255, 249, 222);
+}
+
+.estimate-button {
+  padding: 0.8rem 1.2rem;
+  margin: 2rem auto;
+
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(199, 199, 199, 0.8)
+  );
+  max-width: 300px;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(125, 135, 134, 0.534);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  border-right: 1px solid rgb(199, 199, 199);
+}
+
+.estimate-button a {
+  text-decoration: none;
+  color: rgb(255, 249, 222);
+  font-family: "Atkinson Hyperlegible";
 }
