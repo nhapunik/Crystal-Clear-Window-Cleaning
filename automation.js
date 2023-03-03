@@ -1,23 +1,21 @@
 let form = document.getElementById("form");
 
-form.addEventListener("submit", calculateEstimate);
-
-let calculateEstimate = (event) => {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   let total = 0;
 
-  const postcode = form.getElementById("postcode").value;
-  const windowNumber = form.getElementById("window-number").value;
-  const gutters = form.getElementById("gutters").value;
-  const conservatory = form.getElementById("conservatory").value;
-  const fascias = form.getElementById("fascias").value;
+  const postcode = document.getElementById("postcode").value;
+  const windowNumber = document.getElementById("window-number").value;
+  const gutters = document.getElementById("gutters").value;
+  const conservatory = document.getElementById("conservatory").value;
+  const fascias = document.getElementById("fascia").value;
 
   // radio buttons
-  const weekly = form.getElementById("weekly").value;
-  const monthly = form.getElementById("monthly").value;
-  const biMonthly = form.getElementById("bi-monthly").value;
-  const oneOffOrOther = form.getElementById("other-oneoff").value;
+  const weekly = document.getElementById("weekly").value;
+  const monthly = document.getElementById("monthly").value;
+  const biMonthly = document.getElementById("bi-monthly").value;
+  const oneOffOrOther = document.getElementById("other-oneoff").value;
 
   if (postcode[3] === " " || postcode[3] === 0) {
     total += 3;
@@ -51,5 +49,7 @@ let calculateEstimate = (event) => {
   form.style.display = "none";
   const afterSubmit = document.getElementById("after-submit");
   afterSubmit.style.display = "block";
+  console.log(total);
+  document.querySelector('h2').innerText = 'Thank you for submitting!'
   afterSubmit.innerText = `Our estimate for your window cleaning is £${total}. To confirm the quote and get your windows cleaned, don't hesitate to contact us. Alternatively, if you have left us your phone number, we will be in touch shortly!`;
-};
+});
