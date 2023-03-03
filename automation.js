@@ -7,15 +7,15 @@ form.addEventListener("submit", function (event) {
 
   const postcode = document.getElementById("postcode").value;
   const windowNumber = document.getElementById("window-number").value;
-  const gutters = document.getElementById("gutters").value;
-  const conservatory = document.getElementById("conservatory").value;
-  const fascias = document.getElementById("fascia").value;
+  const gutters = document.getElementById("gutters").checked;
+  const conservatory = document.getElementById("conservatory").checked;
+  const fascias = document.getElementById("fascia").checked;
 
   // radio buttons
-  const weekly = document.getElementById("weekly").value;
-  const monthly = document.getElementById("monthly").value;
-  const biMonthly = document.getElementById("bi-monthly").value;
-  const oneOffOrOther = document.getElementById("other-oneoff").value;
+  const weekly = document.getElementById("weekly").checked;
+  const monthly = document.getElementById("monthly").checked;
+  const biMonthly = document.getElementById("bi-monthly").checked;
+  const oneOffOrOther = document.getElementById("other-oneoff").checked;
 
   if (postcode[3] === " " || postcode[3] === 0) {
     total += 3;
@@ -24,19 +24,24 @@ form.addEventListener("submit", function (event) {
   } else {
     total += 8;
   }
+  console.log(total);
 
-  total += windowNumber;
+  total += Number(windowNumber);
+
+  console.log(total);
 
   if (gutters) {
     total += 7;
   }
+  console.log(total);
   if (conservatory) {
     total += 5;
   }
+  console.log(total);
   if (fascias) {
     total += 6;
   }
-
+  console.log(total);
   if (weekly) {
     total += 2;
   } else if (monthly) {
@@ -46,6 +51,7 @@ form.addEventListener("submit", function (event) {
   } else {
     total += 7;
   }
+  console.log(total);
   form.style.display = "none";
   const afterSubmit = document.getElementById("after-submit");
   afterSubmit.style.display = "block";
