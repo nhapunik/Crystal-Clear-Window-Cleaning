@@ -56,6 +56,6 @@ form.addEventListener("submit", function (event) {
   const afterSubmit = document.getElementById("after-submit");
   afterSubmit.style.display = "block";
   console.log(total);
-  document.querySelector('h2').innerText = 'Thank you for submitting!'
+  document.querySelector("h2").innerText = "Thank you for submitting!";
   afterSubmit.innerText = `Our estimate for your window cleaning is £${total}. To confirm the quote and get your windows cleaned, don't hesitate to contact us. Alternatively, if you have left us your phone number, we will be in touch shortly!`;
 });
