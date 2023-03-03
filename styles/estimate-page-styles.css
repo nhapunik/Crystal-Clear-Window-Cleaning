@@ -98,6 +98,7 @@ main,
   background-color: rgba(245, 245, 245, 0.708);
   border-radius: 6px;
   color: rgb(102, 100, 91);
+  display: block;
 }
 
 h2 {
@@ -165,4 +166,7 @@ h4.credit {
 
 #after-submit {
   display: none;
+  margin: 2rem;
+  line-height: 1.5rem;
+  color: rgb(255, 249, 222);
 }
