@@ -48,4 +48,8 @@ let calculateEstimate = (event) => {
   } else {
     total += 7;
   }
+  form.style.display = "none";
+  const afterSubmit = document.getElementById("after-submit");
+  afterSubmit.style.display = "block";
+  afterSubmit.innerText = `Our estimate for your window cleaning is £${total}. To confirm the quote and get your windows cleaned, don't hesitate to contact us. Alternatively, if you have left us your phone number, we will be in touch shortly!`;
 };
