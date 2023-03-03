@@ -27,7 +27,8 @@ h1 {
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
 }
 
-.home a {
+.home a,
+#submit {
   display: block;
   padding: 0.5rem 1rem;
   margin: 1rem auto;
@@ -39,7 +40,8 @@ h1 {
   color: rgb(255, 249, 222);
   overflow: hidden;
 }
-.home a::before {
+.home a::before,
+#submit::before {
   content: "";
   position: absolute;
   height: 100px;
@@ -54,7 +56,8 @@ h1 {
   transform: rotate(-20deg) translateX(-60px);
 }
 
-.home a:hover::before {
+.home a:hover::before,
+#submit:hover::before {
   transform: rotate(-20deg) translate(280px, 110px);
 }
 
@@ -67,9 +70,6 @@ main {
   );
   max-width: 92%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
   backdrop-filter: blur(10px);
 }
 
@@ -94,7 +94,7 @@ main,
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(199, 199, 199);
   background-color: rgba(245, 245, 245, 0.708);
   border-radius: 6px;
   color: rgb(102, 100, 91);
@@ -105,6 +105,18 @@ h2 {
   text-align: center;
   font-weight: 500;
   padding: 0.3rem 0;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.part {
+  margin: 2rem;
+  line-height: 1.5rem;
+  color: rgb(45, 44, 40);
 }
 
 a:hover {
@@ -124,4 +136,33 @@ h4 {
 h4.credit {
   left: auto;
   right: 3px;
+}
+
+#submit {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(199, 199, 199, 0.8)
+  );
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(125, 135, 134, 0.534);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  border-right: 1px solid rgb(199, 199, 199);
+  text-decoration: none;
+  color: rgb(79, 79, 79);
+  transition: 1s;
+}
+
+#submit:hover {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  transition: 0.9s;
+  cursor: pointer;
+  background-color: cyan;
+  box-shadow: 0px 0px 15px white;
+}
+
+#after-submit {
+  display: none;
 }

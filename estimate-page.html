@@ -30,86 +30,108 @@
       </section>
       <section>
         <form action="form-page.php" method="POST">
-          <label for="postcode">Postcode (EH Postcodes only):</label>
-          <input
-            type="text"
-            id="postcode"
-            name="postcode"
-            value="EH12 A34"
-            required
-          />
-          <label for="window-number">Number of windows in the property:</label>
-          <input
-            type="number"
-            id="window-number"
-            name="window-number"
-            step="1"
-            requred
-          />
-          <label for="gutters">Gutters:</label>
-          <input id="gutters" name="extras" type="checkbox" value="gutters" />
-          <label for="conservatory">Conservatory:</label>
-          <input
-            id="conservatory"
-            name="extras"
-            type="checkbox"
-            value="conservatory"
-          />
-          <label for="fascia">Fascia</label>
-          <input id="fascia" name="extras" type="checkbox" value="fascia" />
+          <div class="form-flex">
+            <div class="part">
+              <label for="postcode">Postcode (EH Postcodes only):</label>
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                value="EH12 A34"
+                required
+              />
+              <br />
+              <label for="window-number"
+                >Number of windows in the property:</label
+              >
+              <input
+                type="number"
+                id="window-number"
+                name="window-number"
+                step="1"
+                requred
+              />
+              <br />
+              <p>Extras:</p>
+              <br />
+              <label for="gutters">Gutters</label>
+              <input
+                id="gutters"
+                name="extras"
+                type="checkbox"
+                value="gutters"
+              />
+              <label for="conservatory">Conservatory</label>
+              <input
+                id="conservatory"
+                name="extras"
+                type="checkbox"
+                value="conservatory"
+              />
+              <label for="fascia">Fascia</label>
+              <input id="fascia" name="extras" type="checkbox" value="fascia" />
+              <br />
+              <p>Desired cleaning frequency:</p>
+              <input
+                type="radio"
+                id="weekly"
+                name="frequency"
+                value="weekly"
+                required
+              />
+              <label for="weekly">weekly</label>
+              <input
+                type="radio"
+                id="monthly"
+                name="frequency"
+                value="monthly"
+                required
+              />
+              <label for="monthly">monthly</label>
+              <input
+                type="radio"
+                id="bi-monthly"
+                name="frequency"
+                value="bi-monthly"
+                required
+              />
+              <label for="bi-montly">bi-monthly</label>
+              <input
+                type="radio"
+                id="other-oneoff"
+                name="frequency"
+                value="other-oneoff"
+                required
+              />
+              <label for="other-oneoff">other/one-off</label>
+              <br />
+            </div>
+            <div class="part">
+              <label for="extra-notes">Extra notes:</label>
+              <br />
+              <textarea name="extra-notes" id="extra-notes" cols="30" rows="5">
+              optional notes</textarea
+              >
+              <p>
+                Want us to get in touch? Pop in your phone number to hear from
+                us!
+              </p>
+              <label for="number">Phone no:</label>
+              <input
+                type="number"
+                id="number"
+                name="number"
+                minlength="9"
+                maxlength="11"
+                value="01234 567 890"
+                step="no"
+              />
+            </div>
+          </div>
           <br />
-          <p>Desired cleaning frequency:</p>
-          <br />
-          <input
-            type="radio"
-            id="weekly"
-            name="frequency"
-            value="weekly"
-            required
-          />
-          <label for="weekly">weekly</label>
-          <input
-            type="radio"
-            id="monthly"
-            name="frequency"
-            value="monthly"
-            required
-          />
-          <label for="eleven">monthly</label>
-          <input
-            type="radio"
-            id="bi-montly"
-            name="frequency"
-            value="bi-montly"
-            required
-          />
-          <label for="bi-montly">bi-monthly</label>
-          <input
-            type="radio"
-            id="other-oneoff"
-            name="frequency"
-            value="other-oneoff"
-            required
-          />
-          <label for="other-oneoff">other/one-off</label>
-          <label for="extra-notes">Extra notes</label>
-          <textarea name="extra-notes" id="extra-notes" cols="30" rows="10">
-optional notes</textarea
-          >
-          <p>
-            Want us to get in touch? Pop in your phone number to hear from us!
-          </p>
-          <label for="number">Phone no:</label>
-          <input
-            type="number"
-            id="number"
-            name="number"
-            minlength="9"
-            maxlength="11"
-            value="01234 567 890"
-          />
-          <input type="submit" value="submit" />
+          <input id="submit" type="submit" value="submit" />
         </form>
+        <p id="after-submit"></p>
       </section>
     </main>
 
