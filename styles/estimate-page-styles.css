@@ -172,3 +172,32 @@ h4.credit {
   color: rgb(255, 249, 222);
   text-align: center;
 }
+
+#contact {
+  display: none;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(255, 249, 222);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+i {
+  margin-left: 1.5rem;
+  color: rgb(255, 249, 222);
+}
+
+i,
+h3 {
+  display: inline-block;
+}
+
+.contact-info {
+  display: inline-block;
+  margin: 1rem 2rem;
+}
