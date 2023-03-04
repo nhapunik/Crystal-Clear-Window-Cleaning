@@ -170,3 +170,77 @@ h4.credit {
   left: auto;
   right: 3px;
 }
+
+.small-screen-info {
+  display: none;
+}
+
+@media screen and (max-width: 1120px) {
+  body {
+    overflow-y: scroll;
+    height: 110vh
+  }
+
+  h4 {
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  h4.credit {
+    float: right;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .bio {
+    width: 100%;
+    height: fit-content;
+    display: block;
+  }
+  main section {
+    display: block;
+    max-width: 100%;
+    height: fit-content;
+  }
+  
+  main {
+    display: block;
+  }
+
+  .contact {
+    text-align: center;
+  }
+  ul li {
+    text-align: center;
+    list-style-type: none;
+    margin: auto 10px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  h1 {
+    margin: auto 17px;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .small-screen-info {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  i,
+h3 {
+  display: block;
+}
+
+h4 {
+  display: block;
+  text-align: left;
+}
+}
