@@ -8,7 +8,7 @@ Hi. You're looking at my **Crystal Clear Window Cleaning** webpage. This is an e
 
 The page also allows for submission of a potential customer's phone number and extra notes.
 
-##Features
+## Features
 
 The project features and index homepage, as well as the price estimator page. Both are styled to a clean, glass-reminiscent style, keeping in theme with the business' profession. The pages are simple, easy to read and show interactivity, which is - again - designed to emulate the properties of glass. The /styles directory contains the corresponding .css stylesheets.
 
@@ -16,11 +16,11 @@ The main directory also contains the price-estimator-script.js file, which provi
 
 The /images directory contains the favicon file used on both pages.
 
-###Technologies
+### Technologies
 
 This project makes use **HTML**, **CSS** and **Vanilla Javascript**.
 
-####Permissions
+#### Permissions
 
 This repo can be freely downloaded and modified for **non-commercial use ONLY**.
 Publishing this project, or any of it's sub-files, whether in original form or modified, is **PROHIBITED without first obtaining permission from the owner of this repo**.
