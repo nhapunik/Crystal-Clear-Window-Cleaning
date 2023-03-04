@@ -201,3 +201,39 @@ h3 {
   display: inline-block;
   margin: 1rem 2rem;
 }
+
+@media screen and (max-width: 1110px) {
+body {
+  overflow-y: scroll;
+  height: 110vh
+}
+
+h4 {
+  display: inline-block;
+  position: relative;
+  margin-top: 2rem;
+}
+
+h4.credit {
+  float: right;
+  margin-right: 5px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .form-flex {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  h1 {
+    margin: auto 17px;
+  }
+
+  h4 {
+    display: block;
+    text-align: left;
+  }
+}
