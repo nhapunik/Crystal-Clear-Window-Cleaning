@@ -227,6 +227,13 @@ h4.credit {
   }
 }
 
+@media screen and (max-width: 800px) {
+  i,
+h3 {
+  display: block;
+}
+}
+
 @media screen and (max-width: 485px) {
   h1 {
     margin: auto 17px;
