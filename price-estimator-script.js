@@ -27,8 +27,10 @@ form.addEventListener("submit", function (event) {
   console.log(total);
 
   if (postcode[0] !== ("E" || "e") || postcode[1] !== ("H" || "h")) {
-    alert("Sorry, only EH poscodes accepted, please enter a valid postcode");
+    // alert("Sorry, only EH poscodes accepted, please enter a valid postcode");
     // getElementById('submit'). render incative
+    document.getElementById("postcode").style.color = "red";
+    document.getElementById("color-change").style.color = "red";
     form.removeEventListener("submit");
   }
 
